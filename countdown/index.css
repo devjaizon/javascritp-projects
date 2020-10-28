@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    flex-basis: 1;
+    min-width: 350px;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.text {
+    flex-basis: 1;
+    min-width: 350px;
+}
+
+.text__info {
+    margin: 1.5rem 0;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3 {
+    color: teal;
+}
+
+.countdown {
+    display: flex;
+}
+.card {
+    width: 60px;
+    height: 60px;
+    background-color: teal;
+    margin-right: 1rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: white;
+}
+.card_number {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .text {
+        padding-left: 1rem;
+        min-width: 350px;
+        width: 50%;
+        margin: 0;
+    }
+    .image {
+        width: 50%;
+        min-width: 350px;
+        margin: 0;
+    }
+    .countdown {
+        justify-content: flex-start;
+    }
+}
+
+.deadline {
+    display: none;
+    color: orangered;
+    background-color: rgba(255, 68, 0, 0.076);
+    border: 2px solid rgb(255, 68, 0);
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+.countdown .show {
+    display: grid;
+}
+.hide {
+    display: none;
+}

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("hero.jpeg");
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px gray;
+    background-color: #fff;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .box > button {
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal .box {
+    position: relative;
+}
+
+.modal .box > button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
